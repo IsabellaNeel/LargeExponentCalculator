@@ -1,0 +1,61 @@
+<!--Runs with: C:\xampp\htdocs\Calculator>python -m http.server-->
+<!--http://localhost:8000/ExponentCalculator.html-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Large Exponent Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+</head>
+
+
+<body>
+
+<div id="header">
+<p><u>Large Number Exponent Calculator :</u>
+<span id="subheader"> Executes: Your Number ^ Reverse of Your Number</span>
+</p>
+</div>
+
+
+<p>
+   
+    <form>
+        Enter an integer (0-99999): 
+        <input type="number" id="inputNumber" min="0" max="99999" style="border-radius: 8px; border:2.5px solid rgb(203, 111, 19)"> 
+        <br>
+        <input type="button" id="myBtn" value="Enter">
+        
+    </form>
+    <p id="output">
+
+    </p>
+
+</p>
+
+<script>
+    var Module = {
+        onRuntimeInitialized: function(){
+            //console.log('reult:' + Module.mainFunction(24));
+        }
+    };
+
+
+    document.getElementById("myBtn").addEventListener("click", pressed);
+
+    function pressed() {
+
+    document.getElementById("output").innerHTML = Module.mainFunction(parseInt(document.getElementById("inputNumber").value));
+    }
+</script>
+
+<script src="/a.out.js"> </script>
+</body>
+
+</html>
