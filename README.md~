@@ -1,3 +1,4 @@
 # LargeExponentCalculator
-# To view Webpage, in the command line, run: python -m http.server
+# 
+# To view Webpage, pull up command line then cd into the Caclulator directory, run: python -m http.server
 # run: http://localhost:8000/ExponentCalculator.html
