@@ -1,4 +1,7 @@
 # LargeExponentCalculator
-# 
-# To view Webpage, pull up command line then cd into the Caclulator directory, run: python -m http.server
-# run: http://localhost:8000/ExponentCalculator.html
+# To view Webpage:
+# 1) pull code onto local device
+# 2) open command line
+# 3) cd into the Calculator directory
+# 4) run: python -m http.server
+# 5) In chrome run: http://localhost:8000/ExponentCalculator.html
