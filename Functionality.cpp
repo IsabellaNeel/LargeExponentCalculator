@@ -29,10 +29,10 @@ std::string mainFunction(int num) {
   /* acounts for zero and digits to the power of 1*/
   if (revNum == 1) {
     str.append(std::to_string(num));
-    return 0;
+    return str;
   } else if (num == 0) {
     str.append("1");
-    return 0;
+    return str;
   }
 
   /*turning num into an array of its digits, it's last digit is at num_arr[0]*/
